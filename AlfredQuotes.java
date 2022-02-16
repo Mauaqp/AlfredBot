@@ -1,28 +1,31 @@
 import java.util.Date;
+
 public class AlfredQuotes {
     
     public String basicGreeting() {
-        // No necesitas codificar aquí, este es un método de ejemplo
         return "Hola, encantado de verte. ¿Cómo estás?";
     }
     
     public String guestGreeting(String name) {
-        // TU CÓDIGO AQUÍ
-        return "marcador de posición para la cadena de retorno del saludo de invitado";
+        return ("Buenos días estimada " + name);
     }
     
     public String dateAnnouncement() {
-        // TU CÓDIGO AQUÍ
-        return ="string from-rainbow">"marcador de posición para la cadena de retorno del anuncio de fecha";
+        Date fechaHoy = new Date();
+        return ("La fecha es " + fechaHoy.toString());
     }
     
     public String respondBeforeAlexis(String conversation) {
-        // TU CÓDIGO AQUÍ
-        return "para respuesta sarcástica devolver cadena";
+        if ( conversation.equals("¡Alexis! Toca algunos beats low-fi.") ) {
+            return (conversation + "... es algo que un chelista de conservatorio jamás diría");
+        }
+        else if ( conversation.equals("No puedo encontrar mi yo-yo. Quizás Alfred sepa dónde está") ) {
+            return ("Puedo ayudarte, pero sólo despues de regar mis magnolias.");
+        }
+        else {
+            return ("Batman nunca se rendiría en una circunstancia similar.");
+        }
     }
-    
 	// BONUS NINJA
 	// Ver las especificaciones para sobrecargar el método guessGreeting
-    ="comment from-rainbow">// BONUS SENSEI
-    // ¡Escribe tu propio método AlfredQuotes usando cualquiera de los métodos String que has aprendido!
 }
